@@ -1,0 +1,28 @@
+{
+  "name": "realtime-chat-app",
+  "version": "1.0.0",
+  "description": "A real time chat app vanilla js socket io websockets",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerjoWeb/realtime-chat-app.git"
+  },
+  "author": "Sergei Ivanov <sergeyweb87@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SerjoWeb/realtime-chat-app/issues"
+  },
+  "homepage": "https://github.com/SerjoWeb/realtime-chat-app#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "moment": "^2.29.3",
+    "socket.io": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

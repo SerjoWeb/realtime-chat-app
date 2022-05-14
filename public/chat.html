@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Chat</title>
+    <link rel="stylesheet" href="normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="chat">
+        <main class="chat-room">
+            <section>
+                <div class="header">
+                    <h1>
+                        <span>&#9787;</span>
+                        <span>ChatLive</span>
+                    </h1>
+                    <button type="button" id="leave-chat">Leave Room</button>
+                </div>
+                <div class="chat-window">
+                    <div class="sidebar">
+                        <div class="room-info">
+                            <h2>
+                                <span>&commat;</span>
+                                <span>Room Name:</span>
+                            </h2>
+                            <p id="room"></p>
+                        </div>
+                        <div class="users-info">
+                            <h2>
+                                <span>&phone;</span>
+                                <span>Users:</span>
+                            </h2>
+                            <div class="user-list" id="user-list"></div>
+                        </div>
+                    </div>
+                    <div class="window" id="chat-window">
+                        <div class="messages-box" id="messages-box"></div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <form id="send-message">
+                        <input type="text" placeholder="Enter Your Message" id="message">
+                        <button type="submit">
+                            <span>&#9993;</span>
+                            <span>Send</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
