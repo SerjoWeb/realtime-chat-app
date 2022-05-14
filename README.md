@@ -1,5 +1,5 @@
 # Real time vanillaJS + socket.io group chat
-## Techs: VanillaJS, NodeJS, Express, MomentJS, NodemonJS
+## Techs: VanillaJS, NodeJS, Express, MomentJS, NodemonJS, Socket.io
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
